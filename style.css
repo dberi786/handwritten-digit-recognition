@@ -1,0 +1,205 @@
+
+/* ===== DigitAI — Main Theme ===== */
+
+.stApp {
+    background: radial-gradient(circle at top left, #1E1B4B, #0B1020 55%);
+    color: #F8FAFC;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Main content */
+.block-container {
+    max-width: 1150px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* Headings */
+h1 {
+    color: #F8FAFC !important;
+    font-size: 2.5rem !important;
+    font-weight: 800 !important;
+    letter-spacing: -1px;
+}
+
+h2, h3 {
+    color: #E2E8F0 !important;
+    font-weight: 700 !important;
+}
+
+p, label, .stMarkdown {
+    color: #CBD5E1;
+}
+
+/* Metric cards */
+[data-testid="stMetric"] {
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(167, 139, 250, 0.25);
+    border-radius: 14px;
+    padding: 18px;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #94A3B8 !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #C4B5FD !important;
+    font-weight: 800;
+}
+
+/* Buttons */
+.stButton > button,
+.stDownloadButton > button {
+    background: linear-gradient(135deg, #7C3AED, #4F46E5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    background: linear-gradient(135deg, #6D28D9, #4338CA);
+    border: none;
+    transform: translateY(-2px);
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: #0F172A;
+    border-right: 1px solid #293449;
+}
+
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    color: #C4B5FD !important;
+}
+
+/* Text inputs */
+.stTextInput input,
+.stNumberInput input,
+.stSelectbox [data-baseweb="select"],
+.stTextArea textarea {
+    background-color: #111827;
+    color: #F8FAFC;
+    border: 1px solid #374151;
+    border-radius: 8px;
+}
+
+/* File uploader */
+[data-testid="stFileUploader"] {
+    background: rgba(30, 41, 59, 0.45);
+    border: 1px dashed #7C3AED;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+[data-testid="stFileUploader"] section {
+    background: transparent;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    border-bottom: 1px solid #334155;
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: #94A3B8;
+    padding: 10px 18px;
+    border-radius: 8px 8px 0 0;
+}
+
+.stTabs [aria-selected="true"] {
+    color: #C4B5FD !important;
+    background: rgba(124, 58, 237, 0.15);
+}
+
+/* Progress bar */
+.stProgress > div > div > div > div {
+    background: linear-gradient(90deg, #7C3AED, #A78BFA);
+}
+
+/* Dataframes and tables */
+[data-testid="stDataFrame"],
+[data-testid="stTable"] {
+    border: 1px solid #334155;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Alerts and status messages */
+[data-testid="stAlert"] {
+    border-radius: 10px;
+    border: 1px solid #334155;
+}
+
+/* Expanders */
+[data-testid="stExpander"] {
+    background: rgba(15, 23, 42, 0.65);
+    border: 1px solid #334155;
+    border-radius: 10px;
+}
+
+/* Images */
+[data-testid="stImage"] img {
+    border-radius: 12px;
+}
+
+/* Dividers */
+hr {
+    border-color: #334155;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Spinner */
+.stSpinner > div {
+    border-top-color: #A78BFA !important;
+}
+
+/* Hide Streamlit's default header and footer */
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+footer {
+    visibility: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0B1020;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7C3AED;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .block-container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    [data-testid="stMetric"] {
+        padding: 12px;
+    }
+}

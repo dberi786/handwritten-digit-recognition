@@ -1,0 +1,9 @@
+
+torch
+torchvision
+matplotlib
+scikit-learn
+streamlit
+streamlit-drawable-canvas
+pillow
+numpy
